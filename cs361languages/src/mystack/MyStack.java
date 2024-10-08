@@ -47,6 +47,7 @@ public class MyStack<T> {
 		theStack = new MyNode<T>(v, theStack);
 	}
 
+	// I added this method to test if the stack works
 	public void printStack() {
 		MyNode<T> nextNode = theStack;
 		while (nextNode != null) {
@@ -95,8 +96,8 @@ public class MyStack<T> {
 		personStack.printStack();
 		System.out.println();
 		
-		personStack.push(new Person("Christelle", "Scharffc"));
-		System.out.println("Push my name:");
+		personStack.push(new Person("Christelle", "Scharff"));
+		System.out.println("Push your name:");
 		personStack.printStack();
 		System.out.println();
 	}

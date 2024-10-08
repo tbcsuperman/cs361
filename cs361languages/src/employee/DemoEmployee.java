@@ -33,7 +33,7 @@ public class DemoEmployee {
 		emp3.whoAmI();
 		// TODO (DONE) To complete
 		// emp3.whoAmI(); // prints EMPLOYEE because they are a standard employee
-		// emp3.getHourlyRate(); // returns syntax error because standard employees don't have hourly wages
+		// emp3.getHourlyRate(); // returns syntax error because Employee class don't have the field hourlyRate
 
 		// TODO (DONE) To complete
 		// Add the condition that test that emp3 is an instance of part time employee at
@@ -46,11 +46,12 @@ public class DemoEmployee {
 
 		// Downcasting 1
 		// TODO (DONE) Uncomment and run the code
-		// PartTimeEmployee pEmp3 = (PartTimeEmployee) emp1;
+		PartTimeEmployee pEmp3 = (PartTimeEmployee) emp1;
 		// TODO (DONE) To complete
-		// This instruction compiles
+		// This instruction compiles, but gets a runtime error
 		// This instruction returns a ClassCastException at run time
-		// because employee doesn't have the hourly wage field
+		// because it is trying to cast a parent class to a child class which has an extra field that the parent class doesn't have
+		// The Employee class doesn't have the hourlyRate field that the PartTimeEmployee class has
 
 		// Downcasting 2
 		// Requires the use of intanceof to avoid a run time cast exception

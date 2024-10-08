@@ -45,4 +45,8 @@ public class Person {
 		this.lname = lname;
 	}
 
+	//I added this method to test out the printing of the stack
+	public String toString() {
+		return fname + " " + lname;
+	}
 }

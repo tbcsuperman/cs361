@@ -67,7 +67,7 @@ public class Circle extends GraphicObject implements Cloneable {
 
 	// TODO (DONE) To complete
 	// TODO (DONE) Be sure that you understand the difference between equals and ==
-	// equals checks if the object has the same values while == checks if they are the same object in memory
+	// ANSWER: equals checks if the object has the same values while == checks if they are the same object in memory
 	/**
 	 * @return true if this and obj have the same values for
 	 * centerX, centerY and radius
